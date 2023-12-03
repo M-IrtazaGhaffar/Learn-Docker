@@ -2,8 +2,9 @@
 
 # Docker file
 Use Docker file (Dockerfile) to give the specifications of the docker Image while building. All of the commands to run the docker Image is used in this container.
-Copy all folders, Run npm install
+Copy all folders in a new folder named app, Run npm install
 ```
+WORKDIR /app
 COPY . .
 RUN npm install
 ENTRYPOINT['node', 'server.js']
