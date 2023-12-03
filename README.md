@@ -8,11 +8,11 @@ Use Docker Compose (docker-compose.yml) to specify the number of containers whic
 
 # Docker Networking
 Docker uses 3 types of Networking to connect the Containers with the Internet.
-1). None
+1). None: 
       No connection is being established.
-2). Bridge (Default)
+2). Bridge (Default): 
       Docker establishes a bridge between the conatiner and the internet for connection.
-3). Host
+3). Host: s
       Docker uses Host Network as a local matchine not like a container which is attached to internet with a bridge. We also don't have to do the port mapping because it is being used as a Local Matchine not a container aswell.
 
 Check all the Images using types of network
