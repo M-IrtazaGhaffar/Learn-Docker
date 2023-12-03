@@ -8,8 +8,7 @@ Use Docker Compose (docker-compose.yml) to specify the number of containers whic
 
 # Docker Networking
 Docker uses 3 types of Networking to connect the Containers with the Internet.
-```
-```
+``
 1). None: 
       No connection is being established.
 ```
