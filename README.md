@@ -1,5 +1,11 @@
 ## Learn-Docker
 
+# Docker files and compose
+Use Docker file (Dockerfile) to give the specifications of the docker Image while building. All of the commands to run the docker Image is used in this container.
+
+# Docker Compose
+Use Docker Compose (docker-compose.yml) to specify the number of containers which are running together to perform certain operations. All of the containers are performing the given specifications written in the file.
+
 # Commands
 
 Run Docker
@@ -54,6 +60,11 @@ docker stop ImageID
 Restart an Image in Docker
 ```
 docker restart ImageID
+```
+
+Build Docker Image
+```
+docker build -t ImageName
 ```
 
 Check a Running Container in Docker
