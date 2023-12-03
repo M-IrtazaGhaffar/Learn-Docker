@@ -2,6 +2,18 @@
 
 # Docker file
 Use Docker file (Dockerfile) to give the specifications of the docker Image while building. All of the commands to run the docker Image is used in this container.
+Copy all folders, Run npm install
+```
+COPY . .
+RUN npm install
+ENTRYPOINT['node', 'server.js']
+```
+
+# Docker Ignore
+We can Ignore the files which have to be ignored. Create .dockerignore file
+```
+node_modules/
+```
 
 # Docker Compose
 Use Docker Compose (docker-compose.yml) to specify the number of containers which are running together to perform certain operations. All of the containers are performing the given specifications written in the file.
