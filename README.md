@@ -6,6 +6,25 @@ Use Docker file (Dockerfile) to give the specifications of the docker Image whil
 # Docker Compose
 Use Docker Compose (docker-compose.yml) to specify the number of containers which are running together to perform certain operations. All of the containers are performing the given specifications written in the file.
 
+# Docker Networking
+Docker uses 3 types of Networking to connect the Containers with the Internet.
+1). None
+      No connection is being established.
+2). Bridge (Default)
+      Docker establishes a bridge between the conatiner and the internet for connection.
+3). Host
+      Docker uses Host Network as a local matchine not like a container which is attached to internet with a bridge. We also don't have to do the port mapping because it is being used as a Local Matchine not a container aswell.
+
+Check all the Images using types of network
+```
+docker network ls
+```
+
+Run a Docker with Custom Network
+```
+docker run -it --network=host redis
+```
+
 # Commands
 
 Run Docker
