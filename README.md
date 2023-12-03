@@ -50,6 +50,7 @@ When ever we delete a container, it's data is also deleted aswell. So we can joi
 ```
 docker run -it -v /Desktop/Test1:/home/Test2 ubuntu
 ```
+So whenever the container is deleted but the data is on the local matchine aswell. We can again mount the data on the new container as well. Remember that the data is not deleted when the container is deleted but it is deleted when we delete the data on our own by deleting the folder which is mapped on any of the sides.
 
 # Commands
 
