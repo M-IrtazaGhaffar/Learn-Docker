@@ -13,22 +13,22 @@ Docker uses 3 types of Networking to connect the Containers with the Internet.
 1). None: 
       No connection is being established.
 ```
+docker run -it --network=none redis
 ```
 2). Bridge (Default): 
       Docker establishes a bridge between the conatiner and the internet for connection.
 ```
+docker run -it --network=bridge redis
 ```
 3). Host: 
       Docker uses Host Network as a local matchine not like a container which is attached to internet with a bridge. We also don't have to do the port mapping because it is being used as a Local Matchine not a container aswell.
+```
+docker run -it --network=host redis
+```
 
 Check all the Images using types of network
 ```
 docker network ls
-```
-
-Run a Docker with Custom Network
-```
-docker run -it --network=host redis
 ```
 
 # Commands
