@@ -1,6 +1,6 @@
 ## Learn-Docker
 
-# Docker files and compose
+# Docker file
 Use Docker file (Dockerfile) to give the specifications of the docker Image while building. All of the commands to run the docker Image is used in this container.
 
 # Docker Compose
@@ -43,6 +43,12 @@ docker run -it --network=host redis
 Check all the Images using types of network
 ```
 docker network ls
+```
+
+# Docker Volumes
+When ever we delete a container, it's data is also deleted aswell. So we can join the docker container to our local matchine. Whenever we change any folder then it automatically copies on both side, whereas the change on one side can also change on the other side aswell. The same folder which is on desktop named Test1 is now available as Test2 in ubuntu container aswell.
+```
+docker run -it -v /Desktop/Test1:/home/Test2 ubuntu
 ```
 
 # Commands
