@@ -7,9 +7,22 @@ Use Docker file (Dockerfile) to give the specifications of the docker Image whil
 Use Docker Compose (docker-compose.yml) to specify the number of containers which are running together to perform certain operations. All of the containers are performing the given specifications written in the file.
 
 # Docker Networking
-Docker uses 3 types of Networking to connect the Containers with the Internet.
+Docker uses 3 types of Networking to connect the Containers with the Internet. Create own Network:
 ```
-<-----|||||----->
+docker network create -d (host/bridge/none) networkName
+```
+We can only connect this network to be shared by other containers! We can't make all of them hosts.
+```
+docker run -it --network=networkName --name container1 ubuntu
+docker run -it --network=networkName --name container2 ubuntu
+```
+Also in container1:
+```
+ping container2
+```
+We can also delete these network:
+```
+docker network rm networkName
 ```
 1). None: 
       No connection is being established.
