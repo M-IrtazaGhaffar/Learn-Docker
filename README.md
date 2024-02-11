@@ -86,7 +86,7 @@ docker run -it redis
 
 Run Docker in Background
 ```
-docker run redis -d
+docker run -d redis
 ```
 
 Run Docker and give a Specific Name to Container
