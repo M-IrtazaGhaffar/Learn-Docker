@@ -60,6 +60,10 @@ docker network ls
 
 # Docker Volumes
 When ever we delete a container, it's data is also deleted aswell. So we can join the docker container to our local matchine. Whenever we change any folder then it automatically copies on both side, whereas the change on one side can also change on the other side aswell. The same folder which is on desktop named Test1 is now available as Test2 in ubuntu container aswell.
+
+```
+docker volume ls
+```
 ```
 docker run -it -v /Desktop/Test1:/home/Test2 ubuntu
 ```
